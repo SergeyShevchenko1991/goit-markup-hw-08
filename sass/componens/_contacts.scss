@@ -1,0 +1,36 @@
+.contacts {
+  display: flex;
+  margin-left: auto;
+  list-style-type: none;
+
+  &__item {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition-duration: 250ms;
+    transition-property: color, fill;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--brand-color);
+      fill: var(--brand-color);
+    }
+  }
+
+  &__icon {
+    margin-right: 10px;
+  }
+}

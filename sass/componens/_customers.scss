@@ -1,0 +1,34 @@
+.customers {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    flex: 1 1 0;
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: var(--icon-color);
+    transition-duration: 250ms;
+    transition-property: border-color, fill;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      fill: var(--brand-color);
+      border-color: var(--brand-color);
+    }
+  }
+}
