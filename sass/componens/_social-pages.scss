@@ -1,0 +1,28 @@
+.social-pages {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include tablet {
+    display: none;
+  }
+
+  &__item:first-child a {
+    padding-left: 0;
+  }
+
+  &__item:last-child a {
+    border-right: none;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--brand-color);
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}

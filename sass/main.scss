@@ -1,5 +1,6 @@
 @import "./utils/modern-normalize";
 @import "./utils/vars";
+@import "./utils/mixins";
 @import "./common";
 
 // componens//
@@ -7,6 +8,7 @@
 @import "./componens/logo";
 @import "./componens/menu";
 @import "./componens/contacts";
+@import "./componens/social-pages";
 @import "./componens/intro";
 @import "./componens/button";
 @import "./componens/benefits";

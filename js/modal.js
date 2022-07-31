@@ -10,5 +10,11 @@
 
   function toggleModal() {
     refs.modal.classList.toggle("is-hidden");
+
+    if (refs.modal.classList.value.includes("is-hidden")) {
+      document.body.style.overflow = "auto";
+    } else {
+      document.body.style.overflow = "hidden";
+    }
   }
 })();

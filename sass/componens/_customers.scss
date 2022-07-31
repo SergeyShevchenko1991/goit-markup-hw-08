@@ -1,14 +1,19 @@
 .customers {
   &__list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
   }
 
   &__item {
-    flex: 1 1 0;
-    margin-right: 30px;
+    flex: 44.82% 0 0;
 
-    &:last-child {
-      margin-right: 0;
+    @include tablet {
+      flex: 30.5% 0 0;
+    }
+
+    @include desktop {
+      flex: 1 1 0;
     }
   }
 
@@ -16,7 +21,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;

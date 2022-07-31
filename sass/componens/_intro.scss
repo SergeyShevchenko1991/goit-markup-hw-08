@@ -1,16 +1,24 @@
 .intro {
   position: relative;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 600px;
   background-color: var(--intro-color);
   background-image: url(./../images/inro-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url(./../images/inro-bg@x2.jpg);
+  }
+
+  @include desktop {
+    min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 
   &:before {
     content: "";
@@ -24,16 +32,22 @@
 
   &__title {
     position: relative;
-    max-width: 696px;
+    max-width: 360px;
     margin-bottom: 30px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);
     z-index: 1;
+
+    @include desktop {
+      font-size: 44px;
+      line-height: 1.36;
+      max-width: 696px;
+    }
   }
 
   &__button {

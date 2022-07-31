@@ -1,7 +1,13 @@
 .work {
+  display: none;
+
+  @include desktop {
+    display: block;
+  }
   &__list {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__item {

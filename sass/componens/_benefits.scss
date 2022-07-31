@@ -1,17 +1,28 @@
 .benefits {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
 
   &__list {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    @include desktop {
+      gap: 0 30px;
+    }
   }
 
   &__item {
-    flex: 1 1 0;
-    margin-right: 30px;
+    @include tablet {
+      flex: 47.88% 0 0;
+    }
 
-    &:last-child {
-      margin-right: 0;
+    @include desktop {
+      flex: 1 1 0;
     }
   }
 
@@ -24,11 +35,20 @@
     background-color: var(--grey-color-lighter);
     border-radius: 4px;
     margin-bottom: 30px;
+
+    svg {
+      width: 70px;
+      height: 70px;
+    }
   }
 
   &__title {
+    text-align: center;
     text-transform: uppercase;
     margin-bottom: 10px;
+    @include tablet {
+      text-align: left;
+    }
   }
   &__text {
     line-height: 1.71;
