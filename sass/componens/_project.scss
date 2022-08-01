@@ -1,6 +1,10 @@
 .project {
   padding-bottom: 64px;
 
+  @include desktop {
+    padding-bottom: 94px;
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
